@@ -1,0 +1,208 @@
+/* HELPERS */
+  .flex-center{
+    display: flex;
+    justify-content: center;
+  }
+  .txt-s{font-size: 1.3rem}
+  .txt-m{font-size: 1.7rem}
+  .txt-l{font-size: 2rem}
+
+/* EDIT BOOSTRAP */
+  .container-fluid{
+    max-width: 1024px;
+  }
+
+  .navbar{
+    border-radius: 0;
+  }
+  .nav-tabs li a{
+    font-size: 1.7rem;
+  }
+  .nav-tabs a{
+    margin-bottom: 0;
+  }
+  
+
+  .tab-content{
+    margin-top: 2rem;
+  }
+
+/* ENTRADA */
+  .entrada div{
+    height: 100vh;
+    align-items: center;
+    transition: all 1s ease-in-out;
+  }
+  .entrada img{  
+    max-width: 400px;
+    width: 60vw;
+    transition: all 1s ease-in-out;
+  }
+
+  .entrada--off div{
+    height: 6rem;
+    align-items: center;
+  }
+  .entrada--off img{
+    max-height: 6rem;
+    padding: 1rem;
+  }
+
+
+/* LISTA */
+
+  .lista--conte{
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid transparent;
+    display: flex;
+    align-items: center;
+  }
+  .lista--conte:hover{
+    background: rgba(30, 30, 30, .1);
+    border-color: #ccc
+  }
+
+  .lista--posicion{
+    min-width: 3rem;
+    width: 3rem;
+  }
+  .lista--caratula{
+    cursor: pointer;
+    height: 7rem;
+    position: relative;
+    overflow: hidden;
+    min-width: 7rem;
+    width: 7rem;
+    margin-right: 1rem;
+  }
+
+  .lista--caratula img{
+    min-width: 5rem;
+    width: 100%;
+  }
+  .lista--info{
+    padding: .25rem;
+  }
+  .lista--info h2,
+  .lista--info h3,
+  .lista--info p{
+    display: inline-block;
+    margin: 0;
+  }
+  .lista--info h3:not(:last-child)::after{
+    content: '-';
+  }
+
+
+  .buscador{
+    margin-bottom: 2rem;
+  }
+  .buscador input{
+    margin-top: 2px;
+  }
+
+/* MODAL */
+  .modal-dialog,
+  .modal-content{
+    max-width: 400px;
+  }
+
+  .modal-body{
+    padding-bottom: 3rem;
+  }
+  .modal-body button{
+    margin-top: -.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .modal--img img{
+    max-width: 400px;
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .modal--txt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .modal--play{
+    min-width: 4rem;
+    min-height: 4rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: #5cb85c;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .modal--play:after{
+    content: ' ';
+    width: 0;
+    height: 0;
+    border-top: 1rem solid transparent;
+    border-left: 2rem solid white;
+    border-bottom: 1rem solid transparent;
+    display: inline-block;
+  }
+  .modal--sociales{
+    text-align: center;
+    width: 100%;
+  }
+  .compartir{
+    margin-top: 1rem;
+    color: white;
+    padding: .5rem 1rem;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  .compartir:hover,.compartir:active{
+    color: white;
+    text-decoration: none;
+  }
+  .compartir-tw{
+    background: #55acee;
+  }
+  .compartir-fb{
+    background: #3b5998;
+  }
+  .compartir-gp{
+    background: #dd4b39;
+  }
+
+
+
+@media only screen and (min-width: 992px) {
+
+  .txt-s{font-size: 1.7rem;font-weight: normal}
+  .txt-m{font-size: 2rem}
+  .txt-l{font-size: 3rem}
+
+  .nav-tabs li a{
+    font-size: 2rem;
+  }
+
+  .lista--info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .lista--duracion{
+    padding-right: 1rem;
+  }
+
+  .buscador input{
+    font-size: 2rem;
+    padding: 2rem;
+  }
+  
+  
+
+  .nav--logo{
+    height: 9rem;
+  }
+}
