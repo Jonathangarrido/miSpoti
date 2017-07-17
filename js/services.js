@@ -39,7 +39,7 @@
   angular
     .module('app.services', ['ngResource'])
     .constant('Host', 'api.spotify.com')
-    .constant('Authorization', 'BQDQUbVXWYFFLHD5v0Xm8w8HXzCNLt5jQUkIJ_7XqbEFOAyCpeqA992y6wp-espHixNyoEfBEz8RtkgmAJMSVsqZzUCMM9GKmsgp5mtZ24xjxIcfMjriDqlCWPbCCj0B8Z5H6JVIQfEum_RrCwFuDFQY6ZpOugqo3jMzPcuU4zaTK49fck16WCiKRYcIuxZu_yDUZXIm2TuVMBADmZlJ')
+    .constant('Authorization', 'BQA-WyPj9X4ALd8d1JBMyTsgikU0IKbFsZeQLuc__BfDOpi249vaRGnWJMD-n8fq9UJlH6Fuum6PaDGVYBat3ivm6_rJcX2Dd2eGoXxSqFf3zWH5C-5Al_cG_0cYpPPpIRHTAV6vOgDGNYjqOspBguW1CE8C_o3x_Uai4z4cjrWgYguqthKWr-1seuDICh-itrbr0M2KhueAPuqKOw-T')
     .factory('TopChile', TopChile)
     .factory('Search', Search);
 
