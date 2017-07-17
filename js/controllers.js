@@ -9,6 +9,7 @@
     self.tops = [];
     self.search;
     self.buscadorCasilla = false;
+    self.noBusqueda = false;
     self.modalTrack = [];
 
     // Inicio la navegacion por Tabs
@@ -22,7 +23,7 @@
       .$promise
       .then(function(user) {
         self.tops = user.tracks.items;
-        console.log(self.tops)
+        // console.log(self.tops)
         }, function(error) {
           console.log('Tiempo agotado del token. Ingrese un nuevo en ./js/services.js line 42')
       });
@@ -36,6 +37,12 @@
           .then(function(user) {
             self.busqueda = user.tracks.items;
             self.buscadorCasilla = true;
+            // console.log(user)
+            if(user.tracks.items.length === 0 && user.tracks.items.length === 0){
+              self.noBusqueda = true;
+            }else{
+              self.noBusqueda = false;
+            }
             }, function(error) {
             console.log('Tiempo agotado del token. Ingrese un nuevo en ./js/services.js line 42')
           });
